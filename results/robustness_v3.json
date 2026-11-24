@@ -1,0 +1,40 @@
+{
+  "spec_count": {
+    "OverTime_Yes": 6,
+    "StockOptionLevel": 6,
+    "MonthlyIncome": 6,
+    "EnvironmentSatisfaction": 6,
+    "Age": 5,
+    "NumCompaniesWorked": 4,
+    "DistanceFromHome": 3,
+    "JobSatisfaction": 3
+  },
+  "RERI_adjusted": {
+    "estimate": 11.068282998988527,
+    "lo": 4.858200611895765,
+    "hi": 23.720735687973814,
+    "n_boot": 1000,
+    "share_boot_positive": 1.0
+  },
+  "holm": {
+    "LR vs RF": 0.747,
+    "LR vs XGB": 1.0,
+    "LR vs LGBM": 1.0
+  },
+  "threshold_MonthlyIncome": {
+    "break": 7100.0,
+    "step_size_logodds": -0.6357284494157726,
+    "delta_bic_vs_smooth_baseline": 395.899236278859,
+    "break_lo": 6850.0,
+    "break_hi": 7300.0,
+    "share_below": 0.7068027210884353
+  },
+  "threshold_Age": {
+    "break": 33.5,
+    "step_size_logodds": 0.4467536008484506,
+    "delta_bic_vs_smooth_baseline": 422.377971228374,
+    "break_lo": 33.5,
+    "break_hi": 33.5,
+    "share_below": 0.3904761904761905
+  }
+}

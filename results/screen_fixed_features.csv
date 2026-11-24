@@ -1,0 +1,46 @@
+feature,construct,mean_abs_shap_median,ci_lo,ci_hi,median_rank,rank_q05,rank_q95,top10_share,beats_shadow_share,passes_70,passes_80,passes_90
+OverTime_Yes,Job demands,0.5794426,0.47533727,0.72380686,1.0,1.0,1.5499999999999972,1.0,1.0,True,True,True
+StockOptionLevel,"Rewards (pay, level, equity)",0.38751245,0.285208,0.544738,2.0,2.0,3.0,1.0,0.98,True,True,True
+MonthlyIncome,"Rewards (pay, level, equity)",0.3287541,0.18391815,0.4546005,3.0,2.0,6.549999999999997,0.96,0.98,True,True,True
+Age,Ease of movement,0.2561341,0.1248433,0.38059705,5.0,2.0,12.0,0.9,0.94,True,True,True
+EnvironmentSatisfaction,Work attitudes and climate,0.23283526,0.14681765,0.33334878,6.5,4.0,11.549999999999997,0.9,0.98,True,True,True
+DistanceFromHome,Job demands,0.21676046,0.10487639,0.35870463,6.5,4.0,15.0,0.78,0.9,True,False,False
+NumCompaniesWorked,Ease of movement,0.22659576,0.10509209,0.33451733,7.0,3.45,13.0,0.76,0.94,True,False,False
+JobSatisfaction,Work attitudes and climate,0.19784331,0.11909139,0.29402488,8.0,4.0,13.0,0.8,0.94,True,True,False
+DailyRate,Role and structure,0.16525665,0.087922335,0.31361845,10.0,4.9,20.0,0.52,0.84,False,False,False
+YearsWithCurrManager,Embeddedness and career progress,0.15827775,0.04072879,0.30154228,10.5,4.45,25.549999999999997,0.5,0.76,False,False,False
+BusinessTravel_Travel_Frequently,Job demands,0.15031269,0.04494658,0.24637142,12.0,7.0,28.0,0.26,0.76,False,False,False
+YearsSinceLastPromotion,Embeddedness and career progress,0.12507255,0.028138544,0.25898662,14.0,6.0,28.099999999999994,0.28,0.68,False,False,False
+RelationshipSatisfaction,Work attitudes and climate,0.120006755,0.03605281,0.19939348,15.0,8.0,24.549999999999997,0.22,0.6,False,False,False
+YearsAtCompany,Embeddedness and career progress,0.109987274,0.053724516,0.22576398,16.0,8.0,25.0,0.16,0.5,False,False,False
+JobInvolvement,Work attitudes and climate,0.10856573,0.055436414,0.26641342,16.0,5.45,23.549999999999997,0.22,0.48,False,False,False
+JobLevel,"Rewards (pay, level, equity)",0.10556371,0.01957386,0.29072896,16.5,4.45,30.099999999999994,0.28,0.52,False,False,False
+TotalWorkingYears,Ease of movement,0.08810322,0.031268142,0.18562141,18.5,10.0,30.549999999999997,0.08,0.36,False,False,False
+WorkLifeBalance,Work attitudes and climate,0.07873367,0.018075082,0.16218269,20.0,11.45,30.0,0.02,0.28,False,False,False
+YearsInCurrentRole,Embeddedness and career progress,0.090543225,0.027074404,0.17377289,20.0,10.0,29.0,0.08,0.38,False,False,False
+HourlyRate,Role and structure,0.07905861,0.036530938,0.13003866,21.5,15.0,28.549999999999997,0.0,0.16,False,False,False
+MonthlyRate,Role and structure,0.07194325,0.034351222,0.12664296,21.5,15.0,28.549999999999997,0.0,0.22,False,False,False
+PercentSalaryHike,"Rewards (pay, level, equity)",0.07220268,0.019811695,0.17368701,22.0,10.0,32.55,0.08,0.18,False,False,False
+TrainingTimesLastYear,Embeddedness and career progress,0.071514904,0.009169179,0.16575976,22.0,11.45,33.0,0.04,0.18,False,False,False
+BusinessTravel_Non-Travel,Job demands,0.06361897,0.020685947,0.14840321,23.0,12.9,31.0,0.04,0.18,False,False,False
+JobRole_Research Scientist,Role and structure,0.06145027,0.014481524,0.14124371,24.0,15.45,33.55,0.0,0.12,False,False,False
+EducationField_Technical Degree,Role and structure,0.05295022,0.0023975284,0.12606809,25.0,14.9,37.0,0.0,0.12,False,False,False
+Department_Sales,Role and structure,0.050943114,0.0061801327,0.1622625,25.0,12.45,34.099999999999994,0.0,0.22,False,False,False
+Department_Research & Development,Role and structure,0.06697053,0.0047103697,0.16459163,25.0,10.9,33.55,0.06,0.26,False,False,False
+JobRole_Sales Executive,Role and structure,0.042355344,0.017232252,0.10273248,27.0,18.45,31.549999999999997,0.0,0.02,False,False,False
+JobRole_Laboratory Technician,Role and structure,0.03771235,0.0048194765,0.1473476,28.0,14.45,35.0,0.04,0.16,False,False,False
+EducationField_Life Sciences,Role and structure,0.0319134,0.0036849105,0.15149362,29.5,13.45,36.55,0.02,0.14,False,False,False
+Education,Ease of movement,0.017290978,0.006293605,0.06023258,32.0,24.0,35.0,0.0,0.0,False,False,False
+EducationField_Medical,Role and structure,0.012297922,0.001486282,0.093594424,34.0,21.9,38.55,0.0,0.04,False,False,False
+JobRole_Healthcare Representative,Role and structure,0.010185899,0.0,0.05718484,34.5,27.45,42.55,0.0,0.0,False,False,False
+JobRole_Sales Representative,Role and structure,0.009501025,0.0,0.068327576,35.0,24.45,42.5,0.0,0.0,False,False,False
+JobRole_Manufacturing Director,Role and structure,0.0053885216,0.0,0.040986206,36.0,28.9,42.775,0.0,0.0,False,False,False
+EducationField_Marketing,Role and structure,0.00815993,0.0008878309,0.041173007,36.0,29.0,40.55,0.0,0.0,False,False,False
+BusinessTravel_Travel_Rarely,Job demands,0.0043295636,0.00016555688,0.009482074,37.0,33.45,40.0,0.0,0.0,False,False,False
+JobRole_Research Director,Role and structure,0.0023127056,0.0,0.028142817,38.5,30.45,43.5,0.0,0.0,False,False,False
+PerformanceRating,Embeddedness and career progress,0.0010126946,0.0,0.0063865692,40.0,35.9,43.5,0.0,0.0,False,False,False
+EducationField_Other,Role and structure,0.000846681,0.0,0.014367433,41.0,34.9,43.5,0.0,0.0,False,False,False
+JobRole_Manager,Role and structure,6.612272e-05,0.0,0.014521345,42.25,35.9,43.5,0.0,0.0,False,False,False
+JobRole_Human Resources,Role and structure,0.0,0.0,0.0043794806,43.0,37.9,43.5,0.0,0.0,False,False,False
+Department_Human Resources,Role and structure,0.0,0.0,0.0011463659,43.0,42.225,44.0,0.0,0.0,False,False,False
+EducationField_Human Resources,Role and structure,0.0,0.0,0.0,43.25,42.5,44.5,0.0,0.0,False,False,False

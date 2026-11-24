@@ -1,0 +1,263 @@
+{
+  "n": 1470,
+  "n_attrition": 237,
+  "attrition_rate": 0.16122448979591836,
+  "n_features_main": 45,
+  "n_features_full": 49,
+  "scale_pos_weight": 5.2025316455696204,
+  "best_cv_model": "LR",
+  "holdout_LR": {
+    "ROC_AUC": 0.7762942544577484,
+    "PR_AUC": 0.5414959388126453,
+    "Brier": 0.18369554127522233,
+    "Recall": 0.7021276595744681,
+    "Precision": 0.3333333333333333,
+    "F1": 0.4520547945205479,
+    "best_params": {
+      "m__penalty": "l2",
+      "m__C": 0.009236708571873866
+    }
+  },
+  "holdout_RF": {
+    "ROC_AUC": 0.7818072185373417,
+    "PR_AUC": 0.39949655148052204,
+    "Brier": 0.1313648139568555,
+    "Recall": 0.2553191489361702,
+    "Precision": 0.3870967741935484,
+    "F1": 0.3076923076923077,
+    "best_params": {
+      "m__n_estimators": 200,
+      "m__min_samples_leaf": 5,
+      "m__max_features": "sqrt",
+      "m__max_depth": 12
+    }
+  },
+  "holdout_XGB": {
+    "ROC_AUC": 0.8016194331983805,
+    "PR_AUC": 0.5558100572882123,
+    "Brier": 0.1349695920944214,
+    "Recall": 0.574468085106383,
+    "Precision": 0.4090909090909091,
+    "F1": 0.4778761061946903,
+    "best_params": {
+      "m__subsample": 0.7,
+      "m__reg_lambda": 1,
+      "m__n_estimators": 600,
+      "m__min_child_weight": 1,
+      "m__max_depth": 2,
+      "m__learning_rate": 0.03,
+      "m__colsample_bytree": 0.7
+    }
+  },
+  "holdout_LGBM": {
+    "ROC_AUC": 0.7906796451029374,
+    "PR_AUC": 0.5272472061125127,
+    "Brier": 0.12213715474526649,
+    "Recall": 0.5319148936170213,
+    "Precision": 0.43103448275862066,
+    "F1": 0.47619047619047616,
+    "best_params": {
+      "m__subsample_freq": 1,
+      "m__subsample": 0.7,
+      "m__reg_lambda": 5,
+      "m__num_leaves": 8,
+      "m__n_estimators": 200,
+      "m__min_child_samples": 20,
+      "m__learning_rate": 0.1,
+      "m__colsample_bytree": 0.5
+    }
+  },
+  "tree_model_explained": "XGB",
+  "shap_rank_agreement": {
+    "spearman_all": 0.8018184283604789,
+    "spearman_p": 3.6144387040105855e-11,
+    "top10_overlap": 7,
+    "top10_tree": [
+      "Age",
+      "DailyRate",
+      "DistanceFromHome",
+      "EnvironmentSatisfaction",
+      "JobSatisfaction",
+      "MonthlyIncome",
+      "NumCompaniesWorked",
+      "OverTime_Yes",
+      "StockOptionLevel",
+      "YearsWithCurrManager"
+    ],
+    "top10_LR": [
+      "Age",
+      "EnvironmentSatisfaction",
+      "JobInvolvement",
+      "JobRole_Laboratory Technician",
+      "JobSatisfaction",
+      "NumCompaniesWorked",
+      "OverTime_Yes",
+      "StockOptionLevel",
+      "YearsSinceLastPromotion",
+      "YearsWithCurrManager"
+    ]
+  },
+  "bootstrap_B": 30,
+  "top_interactions": {
+    "MonthlyIncome x OverTime_Yes": 0.03415141627192497,
+    "Age x YearsAtCompany": 0.028525589033961296,
+    "DailyRate x StockOptionLevel": 0.024075306951999664,
+    "MonthlyIncome x StockOptionLevel": 0.022087104618549347,
+    "JobSatisfaction x StockOptionLevel": 0.016966339200735092,
+    "Age x OverTime_Yes": 0.016813911497592926,
+    "MonthlyIncome x YearsWithCurrManager": 0.015758348628878593,
+    "DailyRate x RelationshipSatisfaction": 0.015209653414785862,
+    "Age x DailyRate": 0.014976339414715767,
+    "Age x DistanceFromHome": 0.013648188672959805
+  },
+  "controllability_share": {
+    "Directly controllable (work design and rewards)": 0.32842713594436646,
+    "Indirectly controllable (climate and relationships)": 0.24091558158397675,
+    "Largely non-controllable (personal and history)": 0.22546780109405518,
+    "Structural (role, department, field, pay-rate fields)": 0.20518940687179565
+  },
+  "local_cases": {
+    "A_high_risk_leaver": {
+      "pred_prob": 0.9819135069847107,
+      "actual": 1,
+      "top_contributions": {
+        "OverTime_Yes": [
+          1.0,
+          0.8171411752700806
+        ],
+        "MonthlyIncome": [
+          1118.0,
+          0.7711774110794067
+        ],
+        "JobInvolvement": [
+          1.0,
+          0.6615030765533447
+        ],
+        "JobSatisfaction": [
+          4.0,
+          -0.5186353921890259
+        ],
+        "YearsWithCurrManager": [
+          0.0,
+          0.45467352867126465
+        ],
+        "Age": [
+          25.0,
+          0.40446385741233826
+        ],
+        "DistanceFromHome": [
+          24.0,
+          0.32290369272232056
+        ],
+        "BusinessTravel_Travel_Frequently": [
+          1.0,
+          0.31745097041130066
+        ]
+      }
+    },
+    "B_missed_leaver": {
+      "pred_prob": 0.02101617492735386,
+      "actual": 1,
+      "top_contributions": {
+        "NumCompaniesWorked": [
+          0.0,
+          -0.6694408655166626
+        ],
+        "OverTime_Yes": [
+          0.0,
+          -0.46139100193977356
+        ],
+        "StockOptionLevel": [
+          1.0,
+          -0.37720221281051636
+        ],
+        "JobSatisfaction": [
+          4.0,
+          -0.36918142437934875
+        ],
+        "TotalWorkingYears": [
+          34.0,
+          -0.3597932457923889
+        ],
+        "YearsWithCurrManager": [
+          9.0,
+          -0.30662718415260315
+        ],
+        "DistanceFromHome": [
+          2.0,
+          -0.22322554886341095
+        ],
+        "JobRole_Manufacturing Director": [
+          1.0,
+          -0.22266240417957306
+        ]
+      }
+    },
+    "C_flagged_stayer": {
+      "pred_prob": 0.9399722814559937,
+      "actual": 0,
+      "top_contributions": {
+        "MonthlyIncome": [
+          1200.0,
+          0.6523116230964661
+        ],
+        "OverTime_Yes": [
+          0.0,
+          -0.5312196016311646
+        ],
+        "YearsWithCurrManager": [
+          0.0,
+          0.529226541519165
+        ],
+        "Age": [
+          18.0,
+          0.4092421233654022
+        ],
+        "RelationshipSatisfaction": [
+          1.0,
+          0.3727138042449951
+        ],
+        "StockOptionLevel": [
+          0.0,
+          0.34070661664009094
+        ],
+        "YearsAtCompany": [
+          0.0,
+          0.31485217809677124
+        ],
+        "TotalWorkingYears": [
+          0.0,
+          0.28007838129997253
+        ]
+      }
+    }
+  },
+  "shap_base_value_logodds": 0.3559088408946991,
+  "fairness_threshold": 0.6109372148302947,
+  "fairness": {
+    "Male": {
+      "n": 178,
+      "flag_rate": 0.1348314606741573,
+      "TPR": 0.41935483870967744,
+      "AUC": 0.8266403335527759
+    },
+    "Female": {
+      "n": 116,
+      "flag_rate": 0.19827586206896552,
+      "TPR": 0.625,
+      "AUC": 0.7806249999999999
+    },
+    "Age<30": {
+      "n": 68,
+      "flag_rate": 0.3235294117647059,
+      "TPR": 0.6470588235294118,
+      "AUC": 0.7773933102652826
+    },
+    "Age>=30": {
+      "n": 226,
+      "flag_rate": 0.11061946902654868,
+      "TPR": 0.4,
+      "AUC": 0.8005102040816328
+    }
+  }
+}

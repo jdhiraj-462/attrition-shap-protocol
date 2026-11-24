@@ -1,0 +1,46 @@
+feature,median_rank,q05,q95,top10_share,beats_max_shadow_share,passes_screen
+OverTime_Yes,1.0,1.0,1.0,1.0,1.0,True
+StockOptionLevel,2.0,2.0,3.0,1.0,1.0,True
+MonthlyIncome,3.5,2.0,10.0,0.96,1.0,True
+EnvironmentSatisfaction,5.0,3.0,11.0,0.92,0.94,True
+NumCompaniesWorked,6.0,3.0,11.549999999999997,0.9,0.98,True
+Age,6.5,3.0,13.0,0.88,0.98,True
+DistanceFromHome,7.0,4.0,12.0,0.86,0.96,True
+JobSatisfaction,7.0,4.45,13.0,0.76,0.94,False
+DailyRate,11.0,5.0,19.549999999999997,0.48,0.86,False
+RelationshipSatisfaction,12.0,5.3500000000000005,20.0,0.4,0.74,False
+YearsSinceLastPromotion,13.0,6.45,24.19999999999999,0.3,0.62,False
+BusinessTravel_Travel_Frequently,14.0,7.0,20.0,0.16,0.62,False
+YearsWithCurrManager,15.0,6.0,25.549999999999997,0.3,0.68,False
+YearsAtCompany,16.0,9.0,27.0,0.12,0.46,False
+TotalWorkingYears,16.5,5.45,27.0,0.18,0.38,False
+JobInvolvement,17.0,8.0,27.099999999999994,0.14,0.44,False
+JobLevel,17.0,6.0,28.0,0.26,0.5,False
+MonthlyRate,17.0,12.0,24.549999999999997,0.04,0.4,False
+WorkLifeBalance,18.5,10.0,27.549999999999997,0.12,0.38,False
+YearsInCurrentRole,19.5,8.350000000000001,29.549999999999997,0.12,0.4,False
+HourlyRate,20.5,15.0,28.0,0.0,0.14,False
+PercentSalaryHike,22.0,11.9,27.549999999999997,0.0,0.18,False
+JobRole_Research Scientist,22.5,14.0,30.099999999999994,0.02,0.14,False
+TrainingTimesLastYear,23.0,12.45,30.0,0.02,0.12,False
+Department_Sales,23.0,11.0,32.0,0.04,0.16,False
+JobRole_Laboratory Technician,26.0,14.0,34.099999999999994,0.0,0.08,False
+Department_Research & Development,26.0,14.350000000000001,32.0,0.02,0.06,False
+BusinessTravel_Non-Travel,28.5,21.9,34.0,0.0,0.04,False
+EducationField_Life Sciences,28.5,19.0,35.55,0.0,0.06,False
+EducationField_Technical Degree,29.5,18.9,34.55,0.0,0.02,False
+Education,29.5,20.45,34.0,0.0,0.02,False
+JobRole_Sales Executive,30.0,23.0,36.64999999999999,0.0,0.0,False
+EducationField_Medical,31.0,22.35,36.64999999999999,0.0,0.06,False
+JobRole_Sales Representative,34.0,31.0,40.55,0.0,0.0,False
+EducationField_Marketing,35.0,30.45,40.0,0.0,0.0,False
+BusinessTravel_Travel_Rarely,36.0,33.0,39.0,0.0,0.0,False
+JobRole_Healthcare Representative,36.0,32.45,40.0,0.0,0.0,False
+JobRole_Manufacturing Director,37.0,33.0,42.775,0.0,0.0,False
+PerformanceRating,39.0,35.45,43.0,0.0,0.0,False
+EducationField_Other,40.0,37.0,43.275,0.0,0.0,False
+JobRole_Research Director,42.5,37.0,44.0,0.0,0.0,False
+JobRole_Human Resources,42.5,39.0,44.0,0.0,0.0,False
+JobRole_Manager,43.0,39.45,44.0,0.0,0.0,False
+Department_Human Resources,43.0,40.0,44.0,0.0,0.0,False
+EducationField_Human Resources,43.5,42.225,44.0,0.0,0.0,False

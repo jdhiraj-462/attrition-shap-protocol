@@ -1,0 +1,489 @@
+{
+  "employment_files": [
+    "employment_202309_4.parquet"
+  ],
+  "separation_files": [
+    "separations_202310_4.parquet",
+    "separations_202311_4.parquet",
+    "separations_202312_4.parquet",
+    "separations_202401_4.parquet",
+    "separations_202402_4.parquet",
+    "separations_202403_4.parquet",
+    "separations_202404_4.parquet",
+    "separations_202405_4.parquet",
+    "separations_202406_4.parquet",
+    "separations_202407_4.parquet",
+    "separations_202408_4.parquet",
+    "separations_202409_4.parquet"
+  ],
+  "n_employment_rows": 2261016,
+  "n_separation_rows": 227227,
+  "window_end": 202409,
+  "separation_categories_in_window": {
+    "QUIT": 81576,
+    "RETIREMENT - VOLUNTARY": 55522,
+    "TRANSFER OUT - INDIVIDUAL TRANSFER": 32921,
+    "TERMINATION (EXPIRED APPT/OTHER)": 32079,
+    "OTHER SEPARATION": 16123,
+    "RETIREMENT - OTHER": 3636,
+    "RETIREMENT - EARLY OUT": 205,
+    "TRANSFER OUT - MASS TRANSFER": 168,
+    "REDUCTION IN FORCE (RIF)": 33
+  },
+  "n_quits_population_window": 54623,
+  "n_quits_employed_at_snapshot": 46495,
+  "N_population": 2031771,
+  "crude_one_year_quit_rate": 0.02288397658988144,
+  "base_fraction": 0.1,
+  "n_base": 203177,
+  "dropped_occ_no_data": {
+    "base": 0,
+    "cases": 196
+  },
+  "dropped_missing_core": {
+    "base": 12997,
+    "cases": 2836
+  },
+  "n_analysis": 233647,
+  "n_cases_analysis": 43467,
+  "lr_reference_levels": [
+    "occ_type_ALL OTHER OCCUPATIONS",
+    "occ_category_ADMINISTRATIVE",
+    "bargaining_ELIGIBLE_IN_BU",
+    "payplan_GS",
+    "agency_AF",
+    "state_CA"
+  ],
+  "value_grid_probe_AUC": {
+    "los_years": 0.5,
+    "log_salary": 0.4840247021864876,
+    "age_mid": 0.5
+  },
+  "performance": {
+    "LR": {
+      "case_base_ROC_AUC": 0.7686023576914708,
+      "case_base_PR_AUC": 0.4727500630324872
+    },
+    "LR_spline": {
+      "case_base_ROC_AUC": 0.7827457706724292,
+      "case_base_PR_AUC": 0.5006689570390238
+    },
+    "XGB": {
+      "case_base_ROC_AUC": 0.835668544276114,
+      "case_base_PR_AUC": 0.6556436288509082
+    }
+  },
+  "LR_mean_risk_base": 0.021695604454779388,
+  "LR_spline_mean_risk_base": 0.021772966878987502,
+  "XGB_mean_risk_base": 0.018672779492930804,
+  "screen_B": 6,
+  "screen_subsample": 6000,
+  "variable_screen_K": 4,
+  "date_split_train_end": 202403,
+  "temporal_holdout": {
+    "n_train": 117206,
+    "n_test": 116441,
+    "test_cases": 21229,
+    "test_period_quit_rate": 0.011148279628618241,
+    "ROC_AUC_XGB": 0.7620229782543063,
+    "ROC_AUC_LR": 0.7049094773839057,
+    "top_5pct": {
+      "precision": 0.050556605755093464,
+      "recall": 0.22676527391775403,
+      "lift": 4.534924440297667
+    },
+    "top_10pct": {
+      "precision": 0.040306658265070364,
+      "recall": 0.36158085637571247,
+      "lift": 3.6155047781184977
+    }
+  },
+  "binary_directions": {
+    "career_conditional": {
+      "share_of_base": 0.19641392365127774,
+      "quit_rate_group1": 0.04909246667023612,
+      "quit_rate_group0": 0.016442882755552064,
+      "mean_shap_diff_XGB": 0.17890790036506724,
+      "mean_shap_diff_LR": 0.1179037894129025
+    },
+    "supervisory": {
+      "share_of_base": 0.15884425281312442,
+      "quit_rate_group1": 0.012046078983084511,
+      "quit_rate_group0": 0.024897012583530765,
+      "mean_shap_diff_XGB": -0.05514727211278707,
+      "mean_shap_diff_LR": -0.0795822328054568
+    },
+    "veteran": {
+      "share_of_base": 0.30650436428646544,
+      "quit_rate_group1": 0.025141102400027447,
+      "quit_rate_group0": 0.0218456429270068,
+      "mean_shap_diff_XGB": 0.11005960497293236,
+      "mean_shap_diff_LR": 0.12462002390955162
+    },
+    "flsa_exempt": {
+      "share_of_base": 0.5762172678515091,
+      "quit_rate_group1": 0.0173299265410412,
+      "quit_rate_group0": 0.030369129598610337,
+      "mean_shap_diff_XGB": 0.06995999684523241,
+      "mean_shap_diff_LR": 0.0018336076606273288
+    },
+    "pay_redacted": {
+      "share_of_base": 0.4785992217898833,
+      "quit_rate_group1": 0.024098000439463856,
+      "quit_rate_group0": 0.021715409439290036,
+      "mean_shap_diff_XGB": 0.0010038624732160385,
+      "mean_shap_diff_LR": 1.0525794167758074
+    },
+    "occ_type_STEM OCCUPATIONS": {
+      "share_of_base": 0.17608581343989904,
+      "quit_rate_group1": 0.016265527950310558,
+      "quit_rate_group0": 0.024264161539836113,
+      "mean_shap_diff_XGB": 0.09702736548884479,
+      "mean_shap_diff_LR": 0.008738610154894392
+    },
+    "occ_type_HEALTH OCCUPATIONS": {
+      "share_of_base": 0.09000420654117153,
+      "quit_rate_group1": 0.026219547817958756,
+      "quit_rate_group0": 0.022523011851175584,
+      "mean_shap_diff_XGB": 0.09227559689945428,
+      "mean_shap_diff_LR": 0.5919524806932412
+    }
+  },
+  "dependence_deciles": {
+    "log_salary": [
+      {
+        "x_min": 10.3608,
+        "x_max": 10.7504,
+        "shap": 0.1806
+      },
+      {
+        "x_min": 10.7504,
+        "x_max": 10.9128,
+        "shap": 0.0623
+      },
+      {
+        "x_min": 10.9128,
+        "x_max": 11.081,
+        "shap": -0.0198
+      },
+      {
+        "x_min": 11.081,
+        "x_max": 11.2445,
+        "shap": -0.0572
+      },
+      {
+        "x_min": 11.2445,
+        "x_max": 11.4034,
+        "shap": -0.0502
+      },
+      {
+        "x_min": 11.4035,
+        "x_max": 11.5375,
+        "shap": -0.0547
+      },
+      {
+        "x_min": 11.5375,
+        "x_max": 11.6677,
+        "shap": -0.0634
+      },
+      {
+        "x_min": 11.6678,
+        "x_max": 11.8087,
+        "shap": -0.0663
+      },
+      {
+        "x_min": 11.8087,
+        "x_max": 11.9803,
+        "shap": -0.0666
+      },
+      {
+        "x_min": 11.9803,
+        "x_max": 12.8741,
+        "shap": -0.0643
+      }
+    ],
+    "age_mid": [
+      {
+        "x_min": 18.0,
+        "x_max": 32.0,
+        "shap": 0.1024
+      },
+      {
+        "x_min": 32.0,
+        "x_max": 37.0,
+        "shap": 0.0962
+      },
+      {
+        "x_min": 37.0,
+        "x_max": 37.0,
+        "shap": 0.1018
+      },
+      {
+        "x_min": 37.0,
+        "x_max": 42.0,
+        "shap": 0.0651
+      },
+      {
+        "x_min": 42.0,
+        "x_max": 47.0,
+        "shap": 0.0416
+      },
+      {
+        "x_min": 47.0,
+        "x_max": 47.0,
+        "shap": 0.0105
+      },
+      {
+        "x_min": 47.0,
+        "x_max": 52.0,
+        "shap": -0.0159
+      },
+      {
+        "x_min": 52.0,
+        "x_max": 57.0,
+        "shap": -0.0757
+      },
+      {
+        "x_min": 57.0,
+        "x_max": 62.0,
+        "shap": -0.1709
+      },
+      {
+        "x_min": 62.0,
+        "x_max": 67.0,
+        "shap": -0.3133
+      }
+    ],
+    "los_years": [
+      {
+        "x_min": 0.0,
+        "x_max": 0.8,
+        "shap": 0.8717
+      },
+      {
+        "x_min": 0.8,
+        "x_max": 2.2,
+        "shap": 0.5086
+      },
+      {
+        "x_min": 2.2,
+        "x_max": 4.0,
+        "shap": 0.3058
+      },
+      {
+        "x_min": 4.0,
+        "x_max": 6.0,
+        "shap": 0.2289
+      },
+      {
+        "x_min": 6.0,
+        "x_max": 8.5,
+        "shap": 0.029
+      },
+      {
+        "x_min": 8.5,
+        "x_max": 12.2,
+        "shap": -0.1855
+      },
+      {
+        "x_min": 12.2,
+        "x_max": 15.0,
+        "shap": -0.6251
+      },
+      {
+        "x_min": 15.0,
+        "x_max": 18.7,
+        "shap": -0.8858
+      },
+      {
+        "x_min": 18.7,
+        "x_max": 24.7,
+        "shap": -1.0426
+      },
+      {
+        "x_min": 24.7,
+        "x_max": 50.0,
+        "shap": -1.3249
+      }
+    ],
+    "grade_num": [
+      {
+        "x_min": 0.0,
+        "x_max": 3.0,
+        "shap": 0.0652
+      },
+      {
+        "x_min": 3.0,
+        "x_max": 6.0,
+        "shap": 0.0718
+      },
+      {
+        "x_min": 6.0,
+        "x_max": 7.0,
+        "shap": 0.0507
+      },
+      {
+        "x_min": 7.0,
+        "x_max": 9.0,
+        "shap": 0.0282
+      },
+      {
+        "x_min": 9.0,
+        "x_max": 11.0,
+        "shap": 0.0313
+      },
+      {
+        "x_min": 11.0,
+        "x_max": 11.0,
+        "shap": 0.04
+      },
+      {
+        "x_min": 11.0,
+        "x_max": 12.0,
+        "shap": -0.0885
+      },
+      {
+        "x_min": 12.0,
+        "x_max": 13.0,
+        "shap": -0.0892
+      },
+      {
+        "x_min": 13.0,
+        "x_max": 14.0,
+        "shap": -0.0864
+      },
+      {
+        "x_min": 14.0,
+        "x_max": 81.0,
+        "shap": -0.0694
+      }
+    ]
+  },
+  "age_audit": [
+    {
+      "band": "<30",
+      "n_base": 13952,
+      "observed_rate": 0.056586869266055044,
+      "mean_predicted_risk": 0.053768045366047755,
+      "ROC_AUC_within_band": 0.7708688134038498
+    },
+    {
+      "band": "30-39",
+      "n_base": 41362,
+      "observed_rate": 0.033961123736763216,
+      "mean_predicted_risk": 0.02806650765363631,
+      "ROC_AUC_within_band": 0.790438978771272
+    },
+    {
+      "band": "40+",
+      "n_base": 134866,
+      "observed_rate": 0.015960286506606556,
+      "mean_predicted_risk": 0.012161186254866143,
+      "ROC_AUC_within_band": 0.8380544706542545
+    }
+  ],
+  "calibration_deciles": [
+    {
+      "decile": 1,
+      "mean_predicted": 0.0009832822587802813,
+      "observed": 0.0009201808812703754
+    },
+    {
+      "decile": 2,
+      "mean_predicted": 0.0019462569273562171,
+      "observed": 0.002497633820591019
+    },
+    {
+      "decile": 3,
+      "mean_predicted": 0.002981093005296039,
+      "observed": 0.004295930171416553
+    },
+    {
+      "decile": 4,
+      "mean_predicted": 0.004451640644867586,
+      "observed": 0.005937105595288179
+    },
+    {
+      "decile": 5,
+      "mean_predicted": 0.006951139149651024,
+      "observed": 0.008338590956887488
+    },
+    {
+      "decile": 6,
+      "mean_predicted": 0.010508198013407447,
+      "observed": 0.011826260714097913
+    },
+    {
+      "decile": 7,
+      "mean_predicted": 0.01557763918968003,
+      "observed": 0.0159270165106741
+    },
+    {
+      "decile": 8,
+      "mean_predicted": 0.02280240605851714,
+      "observed": 0.02160471107839529
+    },
+    {
+      "decile": 9,
+      "mean_predicted": 0.034772737314131434,
+      "observed": 0.029277526553791147
+    },
+    {
+      "decile": 10,
+      "mean_predicted": 0.08575249306038273,
+      "observed": 0.1279314333789042
+    }
+  ],
+  "auc_by_quit_quarter": {
+    "Q1 Oct-Dec 2023": {
+      "n_cases": 11586,
+      "ROC_AUC_XGB": 0.7826246254536369,
+      "ROC_AUC_LR": 0.7482082507278621
+    },
+    "Q2 Jan-Mar 2024": {
+      "n_cases": 10652,
+      "ROC_AUC_XGB": 0.7703180057950121,
+      "ROC_AUC_LR": 0.7367928293183282
+    },
+    "Q3 Apr-Jun 2024": {
+      "n_cases": 10730,
+      "ROC_AUC_XGB": 0.8281203087436566,
+      "ROC_AUC_LR": 0.7624773320159631
+    },
+    "Q4 Jul-Sep 2024": {
+      "n_cases": 10499,
+      "ROC_AUC_XGB": 0.9682214870936383,
+      "ROC_AUC_LR": 0.8296408132595515
+    }
+  },
+  "top_k_population": {
+    "top_5pct": {
+      "precision": 0.21312440845514777,
+      "recall": 0.466238755837762,
+      "lift": 9.32477511675524
+    },
+    "top_10pct": {
+      "precision": 0.1279314333789042,
+      "recall": 0.5597349713575817,
+      "lift": 5.597349713575817
+    },
+    "top_20pct": {
+      "precision": 0.07860447996634767,
+      "recall": 0.6878321485264683,
+      "lift": 3.439160742632342
+    }
+  },
+  "crude_rate_analysis": 0.022855715637816805,
+  "mc_cost": {
+    "precision_top5": 0.21312440845514777,
+    "median_salary_caught_quitters": 50480.0,
+    "share_caught_with_pay": 0.48105200828974637,
+    "P_net_positive": 0.248,
+    "P_net_positive_half_response": 0.066,
+    "net_median_per_listed_USD": -691.2119464266598,
+    "net_p05_per_listed_USD": -2181.544466561519,
+    "net_p95_per_listed_USD": 1287.6715672976354,
+    "breakeven_success_at_prior_medians": 0.7745798888517529,
+    "breakeven_unit_cost_at_prior_medians": 677.7867687453991
+  }
+}

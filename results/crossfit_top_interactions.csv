@@ -1,0 +1,11 @@
+,,mean_abs_pair_interaction
+JobLevel,OverTime_Yes,0.06720578913785974
+MonthlyIncome,OverTime_Yes,0.06639184886906423
+JobSatisfaction,StockOptionLevel,0.04918545573747077
+Age,StockOptionLevel,0.04909723745722349
+JobSatisfaction,OverTime_Yes,0.04515711125873384
+DailyRate,StockOptionLevel,0.04504665063352001
+DistanceFromHome,OverTime_Yes,0.041160919877136645
+Age,OverTime_Yes,0.03791194416227795
+EnvironmentSatisfaction,OverTime_Yes,0.03745045576776777
+MonthlyIncome,StockOptionLevel,0.03738705090114049

@@ -1,0 +1,61 @@
+{
+  "b0": {
+    "base": -3.082042595673844,
+    "smooth": -2.799696506537495,
+    "weak": -2.3011445505730443,
+    "shifted": -3.3568679025083075
+  },
+  "B": 20,
+  "conditions": [
+    [
+      "base",
+      1470,
+      30
+    ],
+    [
+      "base",
+      5000,
+      12
+    ],
+    [
+      "smooth",
+      1470,
+      30
+    ],
+    [
+      "weak",
+      1470,
+      30
+    ],
+    [
+      "shifted",
+      1470,
+      30
+    ]
+  ],
+  "true_drivers": [
+    "OverTime_Yes",
+    "MonthlyIncome",
+    "StockOptionLevel",
+    "Age",
+    "NumCompaniesWorked",
+    "BusinessTravel_Travel_Frequently",
+    "EnvironmentSatisfaction"
+  ],
+  "decoys": [
+    "JobLevel",
+    "TotalWorkingYears",
+    "DailyRate"
+  ],
+  "config": {
+    "n_estimators": 400,
+    "max_depth": 3,
+    "learning_rate": 0.03,
+    "subsample": 0.85,
+    "colsample_bytree": 0.7,
+    "min_child_weight": 3,
+    "reg_lambda": 5,
+    "eval_metric": "logloss",
+    "tree_method": "hist"
+  }
+}

@@ -1,0 +1,10 @@
+role,n,mean_pred,top_positive_driver,value
+Sales Representative,23,0.6217447519302368,JobRole_Sales Representative,0.20783138275146484
+Laboratory Technician,44,0.3668573200702667,JobRole_Laboratory Technician,0.2346143275499344
+Sales Executive,53,0.3490076959133148,Department_Research & Development,0.14128968119621277
+Research Scientist,72,0.3264598250389099,MonthlyIncome,0.10557867586612701
+Human Resources,11,0.310459703207016,Department_Research & Development,0.13650824129581451
+Healthcare Representative,23,0.20838434994220734,JobRole_Research Scientist,0.07259561866521835
+Manufacturing Director,32,0.1946452558040619,JobRole_Research Scientist,0.07065437734127045
+Manager,19,0.11091788113117218,YearsSinceLastPromotion,0.21105480194091797
+Research Director,17,0.08582296967506409,YearsSinceLastPromotion,0.11798842996358871

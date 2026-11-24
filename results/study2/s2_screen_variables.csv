@@ -1,0 +1,18 @@
+variable,mean_abs_shap_XGB,beats_shadow_share,top3_share,top4_share,top5_share,passes_70,passes_80,passes_90,n_cutoffs_passed,construct
+los_years,0.6929300424588308,1.0,1.0,1.0,1.0,True,True,True,3,Career stage and tenure
+age_mid,0.1657600630412961,1.0,0.9666666666666667,0.9666666666666667,0.9666666666666667,True,True,True,3,Career stage and tenure
+grade_num,0.1435022433943686,1.0,0.7333333333333333,0.8666666666666667,0.9333333333333333,True,True,False,2,"Rewards (pay, grade, step)"
+agency,0.13905864346006144,1.0,0.26666666666666666,0.8,0.9333333333333333,True,True,False,2,Organisation and location
+step,0.11417663452853755,1.0,0.03333333333333333,0.13333333333333333,0.6333333333333333,False,False,False,0,"Rewards (pay, grade, step)"
+log_salary,0.11084024502010306,1.0,0.0,0.23333333333333334,0.5333333333333333,False,False,False,0,"Rewards (pay, grade, step)"
+veteran,0.0920780795511046,1.0,0.0,0.0,0.0,False,False,False,0,Human capital
+occ_category,0.062070197403995005,1.0,0.0,0.0,0.0,False,False,False,0,Job content
+career_conditional,0.05542682045832058,1.0,0.0,0.0,0.0,False,False,False,0,Career stage and tenure
+edu_level,0.03238695041824536,0.7666666666666667,0.0,0.0,0.0,False,False,False,0,Human capital
+state,0.02596967466882177,0.4666666666666667,0.0,0.0,0.0,False,False,False,0,Organisation and location
+payplan,0.017479896645330773,0.3333333333333333,0.0,0.0,0.0,False,False,False,0,Employment terms
+occ_type,0.014276101824557208,0.36666666666666664,0.0,0.0,0.0,False,False,False,0,Job content
+flsa_exempt,0.012271700450330445,0.3333333333333333,0.0,0.0,0.0,False,False,False,0,"Rewards (pay, grade, step)"
+supervisory,0.003459689171569162,0.0,0.0,0.0,0.0,False,False,False,0,Job content
+bargaining,0.0033736892823035304,0.0,0.0,0.0,0.0,False,False,False,0,Employment terms
+pay_redacted,0.000898888150210314,0.0,0.0,0.0,0.0,False,False,False,0,"Rewards (pay, grade, step)"

@@ -1,0 +1,11 @@
+,,mean_abs
+MonthlyIncome,OverTime_Yes,0.034151416
+Age,YearsAtCompany,0.028525589
+DailyRate,StockOptionLevel,0.024075307
+MonthlyIncome,StockOptionLevel,0.022087105
+JobSatisfaction,StockOptionLevel,0.01696634
+Age,OverTime_Yes,0.016813911
+MonthlyIncome,YearsWithCurrManager,0.015758349
+DailyRate,RelationshipSatisfaction,0.015209653
+Age,DailyRate,0.014976339
+Age,DistanceFromHome,0.013648189

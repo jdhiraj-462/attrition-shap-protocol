@@ -1,0 +1,58 @@
+feature,top10_share,beats_shadow_share,passes_70,passes_80,passes_90,n_cutoffs_passed,XGB,LR,construct
+los_years,1.0,1.0,True,True,True,3,0.6929300424588308,0.8046336091872885,Career stage and tenure
+age_mid,1.0,1.0,True,True,True,3,0.1657600630412961,0.16151342562683432,Career stage and tenure
+grade_num,1.0,1.0,True,True,True,3,0.1435022433943686,0.04162162423747211,"Rewards (pay, grade, step)"
+step,1.0,1.0,True,True,True,3,0.11417663452853755,0.08610582993468095,"Rewards (pay, grade, step)"
+log_salary,1.0,1.0,True,True,True,3,0.11084024502010306,0.12606650335380057,"Rewards (pay, grade, step)"
+veteran,1.0,1.0,True,True,True,3,0.0920780795511046,0.097732354457745,Human capital
+agency_AF,1.0,1.0,True,True,True,3,0.061852233757702636,0.0,Organisation and location
+career_conditional,0.9666666666666667,1.0,True,True,True,3,0.05542682045832058,0.038805368104025774,Career stage and tenure
+agency_HS,0.9,1.0,True,True,True,3,0.05247497657856904,0.15745974670829171,Organisation and location
+occ_category_TECHNICAL,0.26666666666666666,0.9666666666666667,False,False,False,0,0.036904822741113605,0.10561907714146303,Job content
+agency_VA,0.1,0.7,False,False,False,0,0.036322706616965045,0.23801406110788176,Organisation and location
+edu_level,0.26666666666666666,0.9333333333333333,False,False,False,0,0.03238695041824536,0.025409732417674212,Human capital
+agency_DJ,0.06666666666666667,0.9333333333333333,False,False,False,0,0.030652996188681118,0.0808877089030711,Organisation and location
+occ_category_ADMINISTRATIVE,0.43333333333333335,0.9,False,False,False,0,0.02741273235224213,0.0,Job content
+agency_AR,0.0,0.6,False,False,False,0,0.019566865349401486,0.03756945709738377,Organisation and location
+agency_DD,0.0,0.5,False,False,False,0,0.01577837812790967,0.015613650273867897,Organisation and location
+flsa_exempt,0.0,0.3,False,False,False,0,0.012271700450330445,0.04803228195141783,"Rewards (pay, grade, step)"
+agency_NV,0.0,0.16666666666666666,False,False,False,0,0.011930202759254025,0.08336088837380323,Organisation and location
+state_Other,0.0,0.2,False,False,False,0,0.01147724158096389,0.034885864662105644,Organisation and location
+payplan_Other,0.0,0.1,False,False,False,0,0.010818681177960825,0.008052437163900987,Employment terms
+occ_type_STEM OCCUPATIONS,0.0,0.16666666666666666,False,False,False,0,0.010145560494070524,0.04818622555991518,Job content
+occ_category_OTHER WHITE COLLAR,0.0,0.03333333333333333,False,False,False,0,0.008640577889596116,0.026274069498867028,Job content
+payplan_GS,0.0,0.06666666666666667,False,False,False,0,0.008598821966664436,0.0,Employment terms
+occ_type_HEALTH OCCUPATIONS,0.0,0.06666666666666667,False,False,False,0,0.007830321231132257,0.030598363215617222,Job content
+state_REDACTED,0.0,0.0,False,False,False,0,0.0064261713303396025,0.6185793397681177,Organisation and location
+occ_category_BLUE COLLAR,0.0,0.03333333333333333,False,False,False,0,0.005940951621598033,0.04743030387610562,Job content
+state_MD,0.0,0.0,False,False,False,0,0.0053460819264913514,0.029792264355185807,Organisation and location
+state_PA,0.0,0.0,False,False,False,0,0.00502852581319501,0.02291036710792285,Organisation and location
+agency_SZ,0.0,0.03333333333333333,False,False,False,0,0.004967024475257494,0.01004096214884084,Organisation and location
+occ_category_PROFESSIONAL,0.0,0.0,False,False,False,0,0.004643223888383782,0.035398835892960064,Job content
+state_CA,0.0,0.0,False,False,False,0,0.004307833150450715,0.0,Organisation and location
+occ_category_CLERICAL,0.0,0.0,False,False,False,0,0.0036966666146562785,0.03492689564604838,Job content
+payplan_Wage grade,0.0,0.06666666666666667,False,False,False,0,0.0036493410199252684,0.013021955564891287,Employment terms
+supervisory,0.0,0.0,False,False,False,0,0.003459689171569162,0.020672621840977685,Job content
+agency_HE,0.0,0.0,False,False,False,0,0.0024216157929632756,0.027013697015768806,Organisation and location
+occ_type_ALL OTHER OCCUPATIONS,0.0,0.0,False,False,False,0,0.0022752034584788087,0.0,Job content
+state_DC,0.0,0.0,False,False,False,0,0.002239947109289933,0.009735001331033112,Organisation and location
+bargaining_ELIGIBLE_IN_BU,0.0,0.0,False,False,False,0,0.002165299556421378,0.0,Employment terms
+state_IL,0.0,0.0,False,False,False,0,0.0016093770243681502,0.011065476999179365,Organisation and location
+state_TX,0.0,0.03333333333333333,False,False,False,0,0.0014153354510264217,0.016743384090582177,Organisation and location
+bargaining_REDACTED,0.0,0.0,False,False,False,0,0.0011480948525441636,0.11292966105563358,Employment terms
+pay_redacted,0.0,0.0,False,False,False,0,0.000898888150210314,0.4278138203331939,"Rewards (pay, grade, step)"
+agency_IN,0.0,0.0,False,False,False,0,0.000606664727314992,0.017703889684085896,Organisation and location
+bargaining_ELIGIBLE_NOT_IN_BU,0.0,0.0,False,False,False,0,0.000474476498101958,0.0019775404311479327,Employment terms
+bargaining_NOT_ELIGIBLE,0.0,0.0,False,False,False,0,0.00040076880481194167,0.004181699785580006,Employment terms
+agency_Other,0.0,0.0,False,False,False,0,0.0003428381436183645,0.05746848587021917,Organisation and location
+state_NY,0.0,0.0,False,False,False,0,0.00033876173095264675,0.0015756721880453126,Organisation and location
+agency_TR,0.0,0.0,False,False,False,0,0.00032090355433178044,0.04790542206585101,Organisation and location
+payplan_VA medical,0.0,0.0,False,False,False,0,0.0001319416564320636,0.008979684480021125,Employment terms
+state_FL,0.0,0.0,False,False,False,0,0.00012927949833347157,0.0094947296070481,Organisation and location
+state_GA,0.0,0.0,False,False,False,0,0.00012596224197839546,0.011743341717489133,Organisation and location
+agency_AG,0.0,0.0,False,False,False,0,0.00011613200625679156,0.046467454566089285,Organisation and location
+agency_NN,0.0,0.0,False,False,False,0,2.6877952138565887e-05,0.014014510732263398,Organisation and location
+state_VA,0.0,0.0,False,False,False,0,1.6168131698323123e-05,0.004588061785349218,Organisation and location
+agency_CM,0.0,0.0,False,False,False,0,8.349361831701571e-06,0.017840446629222958,Organisation and location
+agency_TD,0.0,0.0,False,False,False,0,0.0,0.005848532369274285,Organisation and location
+state_MO,0.0,0.0,False,False,False,0,0.0,0.003487448261643134,Organisation and location

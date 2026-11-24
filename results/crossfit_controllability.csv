@@ -1,0 +1,4 @@
+scheme,n_features,share_XGB,share_LR
+Baseline,17,0.6081428981827626,0.5569344797792631
+"Conservative (pay, level and climate treated as not short-term controllable)",8,0.3315352546753061,0.3368603508228653
+Liberal (adds role assignment and distance via relocation or remote work),27,0.7095925522225479,0.7118764694681045

@@ -1,0 +1,52 @@
+{
+  "B": 50,
+  "config": {
+    "n_estimators": 400,
+    "max_depth": 3,
+    "learning_rate": 0.03,
+    "subsample": 0.85,
+    "colsample_bytree": 0.7,
+    "min_child_weight": 3,
+    "reg_lambda": 5,
+    "eval_metric": "logloss",
+    "tree_method": "hist"
+  },
+  "threshold_sensitivity": [
+    {
+      "cut": 0.7,
+      "n_pass": 8,
+      "features": "OverTime_Yes; StockOptionLevel; MonthlyIncome; Age; EnvironmentSatisfaction; DistanceFromHome; NumCompaniesWorked; JobSatisfaction"
+    },
+    {
+      "cut": 0.8,
+      "n_pass": 6,
+      "features": "OverTime_Yes; StockOptionLevel; MonthlyIncome; Age; EnvironmentSatisfaction; JobSatisfaction"
+    },
+    {
+      "cut": 0.9,
+      "n_pass": 5,
+      "features": "OverTime_Yes; StockOptionLevel; MonthlyIncome; Age; EnvironmentSatisfaction"
+    }
+  ],
+  "agreement_with_tuned_config": {
+    "same_pass_set_80": false,
+    "tuned_pass": [
+      "Age",
+      "DistanceFromHome",
+      "EnvironmentSatisfaction",
+      "MonthlyIncome",
+      "NumCompaniesWorked",
+      "OverTime_Yes",
+      "StockOptionLevel"
+    ],
+    "fixed_pass": [
+      "Age",
+      "EnvironmentSatisfaction",
+      "JobSatisfaction",
+      "MonthlyIncome",
+      "OverTime_Yes",
+      "StockOptionLevel"
+    ],
+    "spearman_median_rank": 0.9890233054125527
+  }
+}

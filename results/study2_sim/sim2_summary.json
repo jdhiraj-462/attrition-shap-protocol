@@ -1,0 +1,43 @@
+{
+  "naive_top4": {
+    "TPR": 1.0,
+    "FDR": 0.0,
+    "any_decoy_share": 0.0
+  },
+  "selected_70": {
+    "TPR": 1.0,
+    "FDR": 0.0,
+    "any_decoy_share": 0.0
+  },
+  "selected_80": {
+    "TPR": 0.9166666666666666,
+    "FDR": 0.0,
+    "any_decoy_share": 0.0
+  },
+  "selected_90": {
+    "TPR": 0.875,
+    "FDR": 0.0,
+    "any_decoy_share": 0.0
+  },
+  "per_variable_selection_80": {
+    "age_mid": 1.0,
+    "agency": 0.0,
+    "bargaining": 0.0,
+    "career_conditional": 0.0,
+    "edu_level": 0.0,
+    "flsa_exempt": 0.0,
+    "grade_num": 0.0,
+    "log_salary": 1.0,
+    "los_years": 1.0,
+    "occ_category": 0.6666666666666666,
+    "occ_type": 0.0,
+    "pay_redacted": 0.0,
+    "payplan": 0.0,
+    "state": 0.0,
+    "step": 0.0,
+    "supervisory": 0.0,
+    "veteran": 0.0
+  },
+  "naive_top10_columns_occupation_mean": 3.5,
+  "n_reps": 6
+}

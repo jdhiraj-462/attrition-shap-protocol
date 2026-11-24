@@ -1,0 +1,202 @@
+{
+  "n": 1470,
+  "rank_agreement": {
+    "spearman_xgb_lr": 0.7462450592885375,
+    "spearman_path_vs_interventional": 0.9897233201581026,
+    "top10_overlap_xgb_lr": 5,
+    "top10_overlap_path_int": 9
+  },
+  "xgb_explain_config": {
+    "subsample": 0.7,
+    "reg_lambda": 10,
+    "n_estimators": 400,
+    "min_child_weight": 3,
+    "max_depth": 3,
+    "learning_rate": 0.1,
+    "colsample_bytree": 0.5
+  },
+  "shadow_B": 50,
+  "passing_features": [
+    "OverTime_Yes",
+    "StockOptionLevel",
+    "MonthlyIncome",
+    "EnvironmentSatisfaction",
+    "NumCompaniesWorked",
+    "Age",
+    "DistanceFromHome"
+  ],
+  "top_interactions": {
+    "JobLevel x OverTime_Yes": 0.06720578913785974,
+    "MonthlyIncome x OverTime_Yes": 0.06639184886906423,
+    "JobSatisfaction x StockOptionLevel": 0.04918545573747077,
+    "Age x StockOptionLevel": 0.04909723745722349,
+    "JobSatisfaction x OverTime_Yes": 0.04515711125873384,
+    "DailyRate x StockOptionLevel": 0.04504665063352001,
+    "DistanceFromHome x OverTime_Yes": 0.041160919877136645,
+    "Age x OverTime_Yes": 0.03791194416227795,
+    "EnvironmentSatisfaction x OverTime_Yes": 0.03745045576776777,
+    "MonthlyIncome x StockOptionLevel": 0.03738705090114049
+  },
+  "interaction_test": {
+    "low_pay_cutoff_Q1": 2695.8,
+    "OR_interaction": 1.9711723090573192,
+    "OR_lo": 0.989899228922615,
+    "OR_hi": 3.9251674902538114,
+    "p": 0.05347371311592381,
+    "OR_overtime": 4.181651495661539,
+    "OR_lowpay": 1.9674741512768819
+  },
+  "breakpoints": {
+    "income": 2900.0,
+    "income_ci": [
+      2800.0,
+      2950.0
+    ],
+    "age": 33.5,
+    "age_ci": [
+      33.5,
+      33.5
+    ],
+    "share_below_income_bp": 0.24761904761904763
+  },
+  "fairness_threshold": 0.2938458692096361,
+  "controllability": [
+    {
+      "scheme": "Baseline",
+      "n_features": 17,
+      "share_XGB": 0.6081428981827626,
+      "share_LR": 0.5569344797792631
+    },
+    {
+      "scheme": "Conservative (pay, level and climate treated as not short-term controllable)",
+      "n_features": 8,
+      "share_XGB": 0.3315352546753061,
+      "share_LR": 0.3368603508228653
+    },
+    {
+      "scheme": "Liberal (adds role assignment and distance via relocation or remote work)",
+      "n_features": 27,
+      "share_XGB": 0.7095925522225479,
+      "share_LR": 0.7118764694681045
+    }
+  ],
+  "local_cases": {
+    "A": {
+      "row": 911,
+      "prob": 0.8251929948231371,
+      "left": 1,
+      "contrib": {
+        "OverTime_Yes": [
+          1.0,
+          0.6976065635681152
+        ],
+        "YearsWithCurrManager": [
+          0.0,
+          0.3390049636363983
+        ],
+        "MonthlyIncome": [
+          1118.0,
+          0.33346980810165405
+        ],
+        "Age": [
+          25.0,
+          0.329903244972229
+        ],
+        "JobSatisfaction": [
+          4.0,
+          -0.25320208072662354
+        ],
+        "StockOptionLevel": [
+          0.0,
+          0.23423123359680176
+        ],
+        "DistanceFromHome": [
+          24.0,
+          0.1943730115890503
+        ],
+        "TotalWorkingYears": [
+          1.0,
+          0.1743304580450058
+        ]
+      }
+    },
+    "B": {
+      "row": 749,
+      "prob": 0.022811669853959327,
+      "left": 1,
+      "contrib": {
+        "MonthlyIncome": [
+          19845.0,
+          -0.4447373151779175
+        ],
+        "OverTime_Yes": [
+          0.0,
+          -0.3696015775203705
+        ],
+        "StockOptionLevel": [
+          1.0,
+          -0.25901466608047485
+        ],
+        "Age": [
+          52.0,
+          -0.19636264443397522
+        ],
+        "EnvironmentSatisfaction": [
+          1.0,
+          0.1941150426864624
+        ],
+        "DistanceFromHome": [
+          2.0,
+          -0.14862540364265442
+        ],
+        "JobSatisfaction": [
+          4.0,
+          -0.12280876934528351
+        ],
+        "TotalWorkingYears": [
+          33.0,
+          -0.11990220844745636
+        ]
+      }
+    },
+    "C": {
+      "row": 301,
+      "prob": 0.6919297964019043,
+      "left": 0,
+      "contrib": {
+        "MonthlyIncome": [
+          1200.0,
+          0.9343238472938538
+        ],
+        "OverTime_Yes": [
+          0.0,
+          -0.8676025867462158
+        ],
+        "YearsWithCurrManager": [
+          0.0,
+          0.6873162984848022
+        ],
+        "RelationshipSatisfaction": [
+          1.0,
+          0.5957284569740295
+        ],
+        "StockOptionLevel": [
+          0.0,
+          0.5389509201049805
+        ],
+        "Age": [
+          18.0,
+          0.4959074556827545
+        ],
+        "TotalWorkingYears": [
+          0.0,
+          0.40228912234306335
+        ],
+        "EnvironmentSatisfaction": [
+          4.0,
+          -0.34791502356529236
+        ]
+      }
+    }
+  }
+}

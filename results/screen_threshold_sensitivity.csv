@@ -1,0 +1,4 @@
+cut,n_pass,features
+0.7,8,OverTime_Yes; StockOptionLevel; MonthlyIncome; Age; EnvironmentSatisfaction; DistanceFromHome; NumCompaniesWorked; JobSatisfaction
+0.8,6,OverTime_Yes; StockOptionLevel; MonthlyIncome; Age; EnvironmentSatisfaction; JobSatisfaction
+0.9,5,OverTime_Yes; StockOptionLevel; MonthlyIncome; Age; EnvironmentSatisfaction

@@ -1,0 +1,46 @@
+feature,tuned_70,tuned_80,tuned_90,fixed_70,fixed_80,fixed_90,n_specs_passed,fixed_median_rank
+OverTime_Yes,True,True,True,True,True,True,6,1.0
+StockOptionLevel,True,True,True,True,True,True,6,2.0
+MonthlyIncome,True,True,True,True,True,True,6,3.0
+EnvironmentSatisfaction,True,True,True,True,True,True,6,6.5
+Age,True,True,False,True,True,True,5,5.0
+NumCompaniesWorked,True,True,True,True,False,False,4,7.0
+DistanceFromHome,True,True,False,True,False,False,3,6.5
+JobSatisfaction,True,False,False,True,True,False,3,8.0
+DailyRate,False,False,False,False,False,False,0,10.0
+YearsWithCurrManager,False,False,False,False,False,False,0,10.5
+BusinessTravel_Travel_Frequently,False,False,False,False,False,False,0,12.0
+YearsSinceLastPromotion,False,False,False,False,False,False,0,14.0
+RelationshipSatisfaction,False,False,False,False,False,False,0,15.0
+YearsAtCompany,False,False,False,False,False,False,0,16.0
+JobInvolvement,False,False,False,False,False,False,0,16.0
+JobLevel,False,False,False,False,False,False,0,16.5
+TotalWorkingYears,False,False,False,False,False,False,0,18.5
+WorkLifeBalance,False,False,False,False,False,False,0,20.0
+YearsInCurrentRole,False,False,False,False,False,False,0,20.0
+HourlyRate,False,False,False,False,False,False,0,21.5
+MonthlyRate,False,False,False,False,False,False,0,21.5
+PercentSalaryHike,False,False,False,False,False,False,0,22.0
+TrainingTimesLastYear,False,False,False,False,False,False,0,22.0
+BusinessTravel_Non-Travel,False,False,False,False,False,False,0,23.0
+JobRole_Research Scientist,False,False,False,False,False,False,0,24.0
+EducationField_Technical Degree,False,False,False,False,False,False,0,25.0
+Department_Sales,False,False,False,False,False,False,0,25.0
+Department_Research & Development,False,False,False,False,False,False,0,25.0
+JobRole_Sales Executive,False,False,False,False,False,False,0,27.0
+JobRole_Laboratory Technician,False,False,False,False,False,False,0,28.0
+EducationField_Life Sciences,False,False,False,False,False,False,0,29.5
+Education,False,False,False,False,False,False,0,32.0
+EducationField_Medical,False,False,False,False,False,False,0,34.0
+JobRole_Healthcare Representative,False,False,False,False,False,False,0,34.5
+JobRole_Sales Representative,False,False,False,False,False,False,0,35.0
+JobRole_Manufacturing Director,False,False,False,False,False,False,0,36.0
+EducationField_Marketing,False,False,False,False,False,False,0,36.0
+BusinessTravel_Travel_Rarely,False,False,False,False,False,False,0,37.0
+JobRole_Research Director,False,False,False,False,False,False,0,38.5
+PerformanceRating,False,False,False,False,False,False,0,40.0
+EducationField_Other,False,False,False,False,False,False,0,41.0
+JobRole_Manager,False,False,False,False,False,False,0,42.25
+JobRole_Human Resources,False,False,False,False,False,False,0,43.0
+Department_Human Resources,False,False,False,False,False,False,0,43.0
+EducationField_Human Resources,False,False,False,False,False,False,0,43.25
